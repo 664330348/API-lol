@@ -1,0 +1,196 @@
+.Legends {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+header {
+  background-image: url("../image/background.jpg");
+  background-size: 100% 100%;
+  text-align: center;
+}
+header h1 {
+  color: white;
+  font-size: calc(3vw + 5px);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*------getAPIkey------*/
+.getAPIkey {
+  margin: 1vw 0;
+  text-align: center;
+  font-size: calc(1.5vw + 5px);
+}
+.getAPIkey a {
+  color: rgb(56, 101, 248);
+}
+/*------checkAPIkey------*/
+.checkAPIkey {
+  height: calc(5vw + 5px);
+  display: flex;
+  justify-content: center;
+}
+.checkAPIkey input {
+  margin: 0.8vw;
+  padding: 0 1.5vw;
+  width: 33vw;
+  border: 2px solid black;
+  font-size: calc(1.5vw + 5px);
+}
+.checkAPIkey button {
+  margin: 0.8vw;
+  width: 10vw;
+  font-size: calc(1.5vw + 5px);
+  border: none;
+}
+.checkAPIkey button:hover {
+  background-color: black;
+  color: white;
+}
+/*----------search area--------------*/
+.search {
+  height: calc(5vw + 5px);
+  display: flex;
+  justify-content: center;
+}
+.search input {
+  margin: 0.8vw;
+  padding: 0 1.5vw;
+  width: 33vw;
+  border: 2px solid black;
+  font-size: calc(1.5vw + 5px);
+}
+.search button {
+  margin: 0.8vw;
+  width: 10vw;
+  font-size: calc(1.5vw + 5px);
+  border: none;
+}
+.search button:hover {
+  background-color: black;
+  color: white;
+}
+/*-----------------------------------*/
+.summonerInfor {
+  display: flex;
+  min-height: 500px;
+  flex-direction: column;
+}
+
+.summonerName {
+  font-size: calc(1.5vw + 15px);
+  text-align: center;
+}
+
+.rank {
+  display: flex;
+  justify-content: space-between;
+}
+
+.RankBox {
+  margin: 1vw 10vw;
+  width: 30%;
+  min-height: 40vw;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+
+  border: solid 2px black;
+  border-radius: 15px;
+  background-color: rgb(148, 181, 241);
+}
+/* rank contents*/
+.RankBox h2 {
+  margin: 0;
+  text-align: center;
+
+  font-size: calc(1.5vw + 5px);
+  border-bottom: solid 2px black;
+}
+.content1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.content1Infor {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+.content1 button {
+  padding: 0 5% 0 0;
+  border: none;
+  height: 2vw;
+  text-align: right;
+  font-size: 1.5vw;
+}
+.content1 button:hover {
+  background-color: rgb(99, 99, 243);
+  color: white;
+  cursor: pointer;
+}
+.content1InforLeft {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content1InforLeft img {
+  max-width: 100%;
+}
+.content1InforRight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.content1InforRight p {
+  margin: 0;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: calc(1.5vw + 1px);
+}
+
+.content2 {
+  font-size: calc(3vw + 5px);
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 500px) {
+  .rank {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .RankBox {
+    width: 60%;
+    min-height: 80vw;
+  }
+  /* rank contents*/
+  .RankBox h2 {
+    font-size: calc(3vw + 5px);
+  }
+
+  .content1InforRight p {
+    font-size: calc(3vw + 1px);
+  }
+
+  .content2 {
+    font-size: calc(3vw + 5px);
+  }
+
+  .content1 button {
+    height: 3vw;
+    font-size: 2.25vw;
+  }
+}
