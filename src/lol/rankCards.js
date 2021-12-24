@@ -30,10 +30,10 @@ const colorMatch = {
   SILVER: "#4d4d4d",
   GOLD: "#ffd700",
   PLATINUM: "#006600",
-  DIAMOND: DIAMOND_,
-  MASTER: MASTER_,
-  GRANDMASTER: GRANDMASTER_,
-  CHALLENGER: CHALLENGER_,
+  DIAMOND: "#9234eb",
+  MASTER: "#c90404",
+  GRANDMASTER: "#bd04c7",
+  CHALLENGER: "#f2f28d",
 };
 
 function RankCards(props) {
@@ -63,7 +63,7 @@ function RankCards(props) {
       setHiden(false);
     }
   };
-  let aaa = "blue";
+  
   return (
     <div className="RankBox">
       <h2>{title}</h2>

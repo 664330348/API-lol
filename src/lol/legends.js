@@ -1,5 +1,5 @@
 import { useState } from "react";
-import axios, { Axios } from "axios";
+import axios from "axios";
 import "./legends.css";
 import RankCards from "./rankCards";
 import "antd/dist/antd.css";
@@ -99,7 +99,6 @@ function Legends() {
         setCheckApiT(true);
         let T = apiKeyT;
         setApiKey(T);
-        setApiKeyT("");
       } catch (error) {
         console.log(error);
         setCheckApi(false);
@@ -127,7 +126,7 @@ function Legends() {
 
       <main role="main">
         <div className="getAPIkey">
-          Click the link to get the API KEY：
+         {"1: Click the link to get the API KEY: "}
           <a
             href="https://developer.riotgames.com"
             target="_blank"
@@ -137,6 +136,7 @@ function Legends() {
           </a>
         </div>
         <div className="checkAPIkey">
+          <div className="textSize">{"2: "}</div>
           <input
             value={apiKeyT}
             placeholder="API Key"
@@ -173,6 +173,7 @@ function Legends() {
           )}
         </div>
         <div className="search">
+          <div className="textSize">{"3: "}</div>
           <input
             value={summonerName}
             placeholder="Summoner Name"

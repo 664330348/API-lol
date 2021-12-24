@@ -18,7 +18,10 @@ main {
   flex-direction: column;
   justify-content: center;
 }
-
+.textSize{
+  font-size: calc(1.5vw + 5px);
+  line-height: calc(5vw + 5px);
+}
 /*------getAPIkey------*/
 .getAPIkey {
   margin: 1vw 0;
@@ -46,6 +49,7 @@ main {
   width: 10vw;
   font-size: calc(1.5vw + 5px);
   border: none;
+  cursor: pointer;
 }
 .checkAPIkey button:hover {
   background-color: black;
@@ -69,6 +73,7 @@ main {
   width: 10vw;
   font-size: calc(1.5vw + 5px);
   border: none;
+  cursor: pointer;
 }
 .search button:hover {
   background-color: black;
